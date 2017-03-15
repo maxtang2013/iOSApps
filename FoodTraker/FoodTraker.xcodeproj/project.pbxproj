@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					42E34D991E768B9700E15C45 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7L26LCDYZ7;
 						ProvisioningStyle = Automatic;
 					};
 					42E34DAD1E768B9700E15C45 = {
@@ -363,6 +364,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7L26LCDYZ7;
 				INFOPLIST_FILE = FoodTraker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.maxtang.FoodTraker;
@@ -375,6 +378,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7L26LCDYZ7;
 				INFOPLIST_FILE = FoodTraker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.maxtang.FoodTraker;
