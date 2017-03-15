@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4211FE1C1E7828DB00892B2E /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211FE1B1E7828DB00892B2E /* BookTableViewCell.swift */; };
+		4211FE1E1E782A5C00892B2E /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4211FE1D1E782A5C00892B2E /* BookTableViewController.swift */; };
 		42E34D9E1E768B9700E15C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E34D9D1E768B9700E15C45 /* AppDelegate.swift */; };
 		42E34DA01E768B9700E15C45 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E34D9F1E768B9700E15C45 /* MealViewController.swift */; };
 		42E34DA31E768B9700E15C45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E34DA11E768B9700E15C45 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4211FE1B1E7828DB00892B2E /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		4211FE1D1E782A5C00892B2E /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
 		42E34D9A1E768B9700E15C45 /* FoodTraker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTraker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E34D9D1E768B9700E15C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42E34D9F1E768B9700E15C45 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				42E34DBD1E76CE9800E15C45 /* RatingControl.swift */,
 				42E34DBF1E777A5B00E15C45 /* Meal.swift */,
 				42E34DA11E768B9700E15C45 /* Main.storyboard */,
+				4211FE1D1E782A5C00892B2E /* BookTableViewController.swift */,
+				4211FE1B1E7828DB00892B2E /* BookTableViewCell.swift */,
 				42E34DC31E77940400E15C45 /* MealTableViewController.swift */,
 				42E34DC11E778B4D00E15C45 /* MealTableViewCell.swift */,
 				42E34DA41E768B9700E15C45 /* Assets.xcassets */,
@@ -213,7 +219,9 @@
 			files = (
 				42E34DC01E777A5B00E15C45 /* Meal.swift in Sources */,
 				42E34DA01E768B9700E15C45 /* MealViewController.swift in Sources */,
+				4211FE1E1E782A5C00892B2E /* BookTableViewController.swift in Sources */,
 				42E34DBE1E76CE9800E15C45 /* RatingControl.swift in Sources */,
+				4211FE1C1E7828DB00892B2E /* BookTableViewCell.swift in Sources */,
 				42E34D9E1E768B9700E15C45 /* AppDelegate.swift in Sources */,
 				42E34DC41E77940400E15C45 /* MealTableViewController.swift in Sources */,
 				42E34DC21E778B4D00E15C45 /* MealTableViewCell.swift in Sources */,
@@ -422,6 +430,7 @@
 				42E34DB91E768B9700E15C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42E34DBA1E768B9700E15C45 /* Build configuration list for PBXNativeTarget "FoodTrakerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +439,7 @@
 				42E34DBC1E768B9700E15C45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
