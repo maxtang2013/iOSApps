@@ -3,6 +3,9 @@
 
 # Exclude the build directory
 build/*
+*/Pods/*
+*.playground/*
+
 
 # Exclude temp nibs and swap files
 *~.nib
