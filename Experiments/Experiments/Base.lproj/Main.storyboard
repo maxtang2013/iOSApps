@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A4z-Hb-k5w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Experiments" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GQr-uR-bYD">
+                                <rect key="frame" x="16" y="178" width="305" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAg-jZ-0qb">
+                                <rect key="frame" x="329" y="177" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnAddTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arO-MN-5NV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9Q-iu-dE4" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="216" width="343" height="221.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6L-cu-8Hq" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="437.5" width="343" height="221.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTq-zl-977" customClass="CompassView" customModule="Experiments" customModuleProvider="target">
+                                <rect key="frame" x="36" y="20" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="IDc-xf-3Dy"/>
+                                    <constraint firstAttribute="width" secondItem="pTq-zl-977" secondAttribute="height" multiplier="1:1" id="bh1-zK-RsR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X9Q-iu-dE4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5bE-pE-7Yn"/>
+                            <constraint firstItem="GQr-uR-bYD" firstAttribute="top" secondItem="pTq-zl-977" secondAttribute="bottom" constant="8" id="CSi-cK-MJu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X9Q-iu-dE4" secondAttribute="trailing" id="G2r-Nu-oIT"/>
+                            <constraint firstItem="pTq-zl-977" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Lkg-Hg-0ca"/>
+                            <constraint firstItem="X9Q-iu-dE4" firstAttribute="top" secondItem="GQr-uR-bYD" secondAttribute="bottom" constant="8" symbolic="YES" id="NEB-0F-Z6U"/>
+                            <constraint firstItem="G6L-cu-8Hq" firstAttribute="height" secondItem="X9Q-iu-dE4" secondAttribute="height" id="Oka-8X-nKm"/>
+                            <constraint firstItem="GQr-uR-bYD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QUR-UT-NVE"/>
+                            <constraint firstItem="fAg-jZ-0qb" firstAttribute="leading" secondItem="GQr-uR-bYD" secondAttribute="trailing" constant="8" id="SM6-5Y-zDC"/>
+                            <constraint firstItem="fAg-jZ-0qb" firstAttribute="baseline" secondItem="GQr-uR-bYD" secondAttribute="baseline" id="TN6-li-KnW"/>
+                            <constraint firstItem="fAg-jZ-0qb" firstAttribute="height" secondItem="GQr-uR-bYD" secondAttribute="height" id="XXe-DX-3dH"/>
+                            <constraint firstItem="G6L-cu-8Hq" firstAttribute="top" secondItem="X9Q-iu-dE4" secondAttribute="bottom" id="b2L-a3-Qsv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G6L-cu-8Hq" secondAttribute="bottom" constant="8" id="bE7-M9-ndM"/>
+                            <constraint firstItem="pTq-zl-977" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="h8s-6c-VpU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fAg-jZ-0qb" secondAttribute="trailing" id="lA2-oi-Tcg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G6L-cu-8Hq" secondAttribute="trailing" id="o8p-M9-VO7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="G6L-cu-8Hq" secondAttribute="leading" id="yTC-zN-wYd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="barView" destination="X9Q-iu-dE4" id="DNS-pS-Fn5"/>
+                        <outlet property="lineChart" destination="G6L-cu-8Hq" id="rEq-0z-rHJ"/>
+                        <outlet property="tfValue" destination="GQr-uR-bYD" id="5pv-Vj-Uo3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="34.632683658170919"/>
+        </scene>
+        <!--Animation Test View Controller-->
+        <scene sceneID="Zdb-y5-dQA">
+            <objects>
+                <viewController id="A4z-Hb-k5w" customClass="AnimationTestViewController" customModule="Experiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6QU-YZ-imW"/>
+                        <viewControllerLayoutGuide type="bottom" id="vu8-OD-suE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oo0-Zb-TEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="liM-2l-hWB" customClass="CompassView" customModule="Experiments" customModuleProvider="target">
+                                <rect key="frame" x="51" y="46" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnv-Uw-bq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="-3.1484257871064472"/>
         </scene>
     </scenes>
 </document>
