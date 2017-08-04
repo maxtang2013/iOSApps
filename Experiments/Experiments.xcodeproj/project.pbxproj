@@ -14,6 +14,16 @@
 		422687681E8C02870018AEA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422687671E8C02870018AEA4 /* Assets.xcassets */; };
 		4226876B1E8C02870018AEA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422687691E8C02870018AEA4 /* LaunchScreen.storyboard */; };
 		422687761E8C02880018AEA4 /* ExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422687751E8C02880018AEA4 /* ExperimentsTests.swift */; };
+		425B8C571F3420BB00B39D79 /* MyMandelbrotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B8C561F3420BB00B39D79 /* MyMandelbrotView.swift */; };
+		425B8C591F34250900B39D79 /* ThreadingTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B8C581F34250900B39D79 /* ThreadingTestViewController.swift */; };
+		42B751301EA9B8F7005795D8 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7512E1EA9B8F7005795D8 /* RootTableViewController.swift */; };
+		42B751311EA9B8F7005795D8 /* RootTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B7512F1EA9B8F7005795D8 /* RootTableViewController.xib */; };
+		42B751331EA9E60D005795D8 /* MyNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B751321EA9E60D005795D8 /* MyNewCell.xib */; };
+		42B751351EA9E697005795D8 /* MyNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B751341EA9E697005795D8 /* MyNewCell.swift */; };
+		42B751371EA9FC33005795D8 /* AnotherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B751361EA9FC33005795D8 /* AnotherCell.xib */; };
+		42B751391EA9FDC8005795D8 /* AnotherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B751381EA9FDC8005795D8 /* AnotherCell.swift */; };
+		42C6AA201F318787002760E7 /* FrameBoundsTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C6AA1F1F318787002760E7 /* FrameBoundsTestViewController.swift */; };
+		42C6AA231F31902D002760E7 /* ChatBackgroudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C6AA221F31902D002760E7 /* ChatBackgroudView.swift */; };
 		42CC32EB1E937DAB00BE4427 /* SubViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CC32EA1E937DAB00BE4427 /* SubViewController.storyboard */; };
 		42CC32ED1E94955800BE4427 /* VisitorCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC32EC1E94955800BE4427 /* VisitorCount.swift */; };
 		42CC33061E98858C00BE4427 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC33051E98858C00BE4427 /* CompassView.swift */; };
@@ -44,6 +54,16 @@
 		422687711E8C02880018AEA4 /* ExperimentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExperimentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422687751E8C02880018AEA4 /* ExperimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentsTests.swift; sourceTree = "<group>"; };
 		422687771E8C02880018AEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425B8C561F3420BB00B39D79 /* MyMandelbrotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMandelbrotView.swift; sourceTree = "<group>"; };
+		425B8C581F34250900B39D79 /* ThreadingTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadingTestViewController.swift; sourceTree = "<group>"; };
+		42B7512E1EA9B8F7005795D8 /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		42B7512F1EA9B8F7005795D8 /* RootTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootTableViewController.xib; sourceTree = "<group>"; };
+		42B751321EA9E60D005795D8 /* MyNewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyNewCell.xib; sourceTree = "<group>"; };
+		42B751341EA9E697005795D8 /* MyNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNewCell.swift; sourceTree = "<group>"; };
+		42B751361EA9FC33005795D8 /* AnotherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherCell.xib; sourceTree = "<group>"; };
+		42B751381EA9FDC8005795D8 /* AnotherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherCell.swift; sourceTree = "<group>"; };
+		42C6AA1F1F318787002760E7 /* FrameBoundsTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameBoundsTestViewController.swift; sourceTree = "<group>"; };
+		42C6AA221F31902D002760E7 /* ChatBackgroudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBackgroudView.swift; sourceTree = "<group>"; };
 		42CC32EA1E937DAB00BE4427 /* SubViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubViewController.storyboard; sourceTree = "<group>"; };
 		42CC32EC1E94955800BE4427 /* VisitorCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorCount.swift; sourceTree = "<group>"; };
 		42CC33051E98858C00BE4427 /* CompassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
@@ -106,6 +126,9 @@
 		4226875F1E8C02870018AEA4 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
+				425B8C551F34207C00B39D79 /* ThreadingTest */,
+				42C6AA211F31878D002760E7 /* FrameBoundsTest */,
+				42B7512B1EA9B8A2005795D8 /* TableView */,
 				42CC33091E98EB4300BE4427 /* AnimationTest */,
 				42CC33041E98856C00BE4427 /* Compass */,
 				422687601E8C02870018AEA4 /* AppDelegate.swift */,
@@ -127,6 +150,37 @@
 				422687771E8C02880018AEA4 /* Info.plist */,
 			);
 			path = ExperimentsTests;
+			sourceTree = "<group>";
+		};
+		425B8C551F34207C00B39D79 /* ThreadingTest */ = {
+			isa = PBXGroup;
+			children = (
+				425B8C561F3420BB00B39D79 /* MyMandelbrotView.swift */,
+				425B8C581F34250900B39D79 /* ThreadingTestViewController.swift */,
+			);
+			name = ThreadingTest;
+			sourceTree = "<group>";
+		};
+		42B7512B1EA9B8A2005795D8 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				42B7512E1EA9B8F7005795D8 /* RootTableViewController.swift */,
+				42B7512F1EA9B8F7005795D8 /* RootTableViewController.xib */,
+				42B751321EA9E60D005795D8 /* MyNewCell.xib */,
+				42B751341EA9E697005795D8 /* MyNewCell.swift */,
+				42B751361EA9FC33005795D8 /* AnotherCell.xib */,
+				42B751381EA9FDC8005795D8 /* AnotherCell.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		42C6AA211F31878D002760E7 /* FrameBoundsTest */ = {
+			isa = PBXGroup;
+			children = (
+				42C6AA1F1F318787002760E7 /* FrameBoundsTestViewController.swift */,
+				42C6AA221F31902D002760E7 /* ChatBackgroudView.swift */,
+			);
+			name = FrameBoundsTest;
 			sourceTree = "<group>";
 		};
 		42CC33041E98856C00BE4427 /* Compass */ = {
@@ -247,10 +301,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B751311EA9B8F7005795D8 /* RootTableViewController.xib in Resources */,
 				42CC32EB1E937DAB00BE4427 /* SubViewController.storyboard in Resources */,
 				4226876B1E8C02870018AEA4 /* LaunchScreen.storyboard in Resources */,
 				422687681E8C02870018AEA4 /* Assets.xcassets in Resources */,
+				42B751331EA9E60D005795D8 /* MyNewCell.xib in Resources */,
 				422687661E8C02870018AEA4 /* Main.storyboard in Resources */,
+				42B751371EA9FC33005795D8 /* AnotherCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,10 +419,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				422687631E8C02870018AEA4 /* ViewController.swift in Sources */,
+				42C6AA231F31902D002760E7 /* ChatBackgroudView.swift in Sources */,
+				42B751301EA9B8F7005795D8 /* RootTableViewController.swift in Sources */,
+				42C6AA201F318787002760E7 /* FrameBoundsTestViewController.swift in Sources */,
 				42CC33061E98858C00BE4427 /* CompassView.swift in Sources */,
 				422687611E8C02870018AEA4 /* AppDelegate.swift in Sources */,
+				425B8C571F3420BB00B39D79 /* MyMandelbrotView.swift in Sources */,
 				42CC330B1E98EB6300BE4427 /* AnimationTestViewController.swift in Sources */,
+				42B751391EA9FDC8005795D8 /* AnotherCell.swift in Sources */,
 				42CC32ED1E94955800BE4427 /* VisitorCount.swift in Sources */,
+				42B751351EA9E697005795D8 /* MyNewCell.swift in Sources */,
+				425B8C591F34250900B39D79 /* ThreadingTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

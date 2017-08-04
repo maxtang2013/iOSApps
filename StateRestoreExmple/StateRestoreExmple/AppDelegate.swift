@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Experiments
+//  StateRestoreExmple
 //
-//  Created by max tang on 17/3/29.
+//  Created by max tang on 17/4/20.
 //  Copyright © 2017年 TaiLopez. All rights reserved.
 //
 
@@ -14,18 +14,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // showTableView()
-        
+        self.window = self.window ?? UIWindow()
+        let rvc = RootViewController()
+        rvc.restorationIdentifier = "root"
+        let nav = UINavigationController(rootViewController:rvc)
+        nav.restorationIdentifier = "nav"
+        self.window!.rootViewController = nav
+        self.window!.backgroundColor = .white
+        self.window!.makeKeyAndVisible()
         return true
     }
     
-    private func showTableView() {
-        self.window = self.window ?? UIWindow()
-        self.window!.rootViewController = RootTableViewController() // *
-        self.window!.backgroundColor = .white
-        self.window!.makeKeyAndVisible()
+    func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
+    
+    func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
+        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

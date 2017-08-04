@@ -65,10 +65,12 @@ class ViewController: UIViewController {
     func upateLineChart() {
         var dataEntries: [ChartDataEntry] = []
         var dataEntries2: [ChartDataEntry] = []
+        
+        let days = [1, 3, 5, 7, 15, 30, 60, 90, 180, 365]
 
         let visitorCounts = getVisitorCountsFromDatabase()
         for i in 0..<visitorCounts.count {
-            let dataEntry = ChartDataEntry(x: Double(i), y: Double(visitorCounts[i].count))
+            let dataEntry = ChartDataEntry(x: Double(days[i]), y: Double(visitorCounts[i].count))
             dataEntries.append(dataEntry)
             
             let dataEntry2 = ChartDataEntry(x: Double(i)+0.5, y: Double(visitorCounts[i].count)-0.5)
